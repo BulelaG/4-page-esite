@@ -1,0 +1,97 @@
+/* nagivation bar 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+}
+nav a {
+    text-decoration: none;
+}
+ul li {
+    
+    display: inline-block;
+    list-style: none;
+}
+
+body { 
+    border: darkslategray;
+    margin: 35%;
+    height: auto;
+    padding: 15%;   
+    background-image: url('https://picsum.photos/id/1031/5446/3063.jpg?hmac=Zg0Vd3Bb7byzpvy-vv-fCffBW9EDp1coIbBFdEjeQWE')
+}  
+
+a{
+    padding: 10px;
+    display: inline-block;
+
+}
+
+
+li a{
+    padding: 0cm;
+}
+ */
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+h2{
+
+    padding: 0%;
+    text-size-adjust: 50;
+    color: rgb(92, 95, 92);
+    padding: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+form{
+    margin-left: 35%;
+    margin-right: 35%;
+    text-transform: capitalize;
+
+}
+iframe{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+button{
+    background: rgb(255, 254, 254)
+    
+
+}
+
+h1{
+    text-size-adjust: 50 px;
+    color: rgb(243, 239, 239);
+}
+h3{
+    margin-right: 50%;
+}
+head{
+    margin-left: 35%;
+}
+
+
