@@ -1,41 +1,67 @@
-
+/* css  for navigation*/
 nav {
   position: fixed;
-  top: 10px;
+  top: 0px;
   left: 0;
   width: 100%;
   background-color: rgb(167, 161, 154);
+  height: 8%;
 }
+a{text-decoration: none;
+text-align: center;
+}
+
 nav a {
+  float: right;
   text-decoration: none;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 1px 15px;
+  padding: 5px 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   
 }
+/* css for the lists */
 ul li {
   
   display: inline-block;
   list-style: none;
   flex-direction: row;
+  
 }
+/* styling the logo */
+div .logo{
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-right: 0px;
+  float: left;
+}
+div .logo, img{
+  width:250px;
+  height:250px;
+  float: left;
+  
+}
+/* body styling */
 body {  
     border: darkslategray;
+    text-align: center;
     margin: 0%;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 10%;
     height: auto;
-    padding: 15%;   
+    padding: 5%;   
     background-image: url('https://picsum.photos/id/1031/5446/3063.jpg?hmac=Zg0Vd3Bb7byzpvy-vv-fCffBW9EDp1coIbBFdEjeQWE')
 }  
   
-  /* Change the link color to #111 (black) on hover */
+  /* Change the link color to color on hover */
   li a:hover {
-    background-color: #111;
+    background-color: rgb(75, 50, 50);
   }
+
+  /* 2nd Heading */
+
 h2{
 
     padding: 0%;
@@ -45,20 +71,12 @@ h2{
     margin-left: 25%;
     margin-right: 25%;
 }
-form{
-    margin-left: 35%;
-    margin-right: 35%;
-    text-transform: capitalize;
-
-}
 iframe{
     margin-left: 10%;
     margin-right: 10%;
-}
-button{
-    background: rgb(255, 254, 254)
+    border: 15 solid black;
+  
     
-
 }
 
 h1{
@@ -66,7 +84,7 @@ h1{
     color: rgb(243, 239, 239);
 }
 h3{
-    margin: 0%;
+    text-size-adjust: 20px;
 }
 head{
     margin-left: 35%;
@@ -74,8 +92,8 @@ head{
 /* css for testimonials */
 
 body {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 0px;
+    padding-left: 0%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('background.jpeg');  
@@ -93,7 +111,7 @@ body {
       height: 300px;
       perspective: 1000px;
       margin-left: 0;
-      margin-right: 50%;
+      margin-right: 0;
     }
     
     .flip-card-inner {
@@ -137,17 +155,16 @@ body {
     }
     * {
       box-sizing: border-box;
+      margin-top: 0;
     } 
     /* align the cards*/
     
     div .grid-container { 
   
-      float: left; 
-       width: 33%; 
+       float: left; 
+       width: 100%; 
        padding: 0ch;
-    
-      
-  
+       display: grid;
   
      }
 
@@ -157,7 +174,7 @@ body {
     }
 
   h1{
-    color: rgb(255, 255, 255);
+    color: rgb(241, 234, 234);
     text-decoration: none;
   } 
 
@@ -169,7 +186,7 @@ body {
     padding: 0px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-left: 30%;
+    margin-left: 10%;
   }
   .grid-item {
     
@@ -178,4 +195,89 @@ body {
     font-size: 15px;
     text-align: center;
   }
+  /* styling the form */
+  button{
+    background: rgb(255, 254, 254)
+    
+
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  padding-right: 0%;
+  padding-left: 0%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+button{
+  background: rgb(9, 184, 53)
+  
+  
+
+}
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+padding-right: 0%;
+padding-left: 0%;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;  margin: 0px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+padding-left: 0px;
+padding-right: 0px;
+width: 700px;
+margin-left: 20px;
+margin-right: 0px;
+} 
+#contact-form{
+  padding-right: 0px;
+  padding-left: 0px;
+  
+}
+/* heading of about */
 
