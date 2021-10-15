@@ -5,7 +5,7 @@ nav {
   left: 0;
   width: 100%;
   background-color: rgb(167, 161, 154);
-  height: 8%;
+  height: 6%;
 }
 a{text-decoration: none;
 text-align: center;
@@ -48,8 +48,8 @@ body {
     border: darkslategray;
     text-align: center;
     margin: 0%;
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-right: 300px;
+    margin-left: 300px;
     height: auto;
     padding: 5%;   
     background-image: url('https://picsum.photos/id/1031/5446/3063.jpg?hmac=Zg0Vd3Bb7byzpvy-vv-fCffBW9EDp1coIbBFdEjeQWE')
@@ -57,7 +57,7 @@ body {
   
   /* Change the link color to color on hover */
   li a:hover {
-    background-color: rgb(75, 50, 50);
+    background-color: rgb(0, 0, 0);
   }
 
   /* 2nd Heading */
@@ -66,15 +66,15 @@ h2{
 
     padding: 0%;
     text-size-adjust: 50;
-    color: rgb(92, 95, 92);
-    padding: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
+    color: rgb(0, 0, 0);
+
+  
 }
 iframe{
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 15 solid black;
+  
+    border: 25 solid black;
+    box-sizing: border-box;
+    border-radius: 10%;
   
     
 }
@@ -84,7 +84,7 @@ h1{
     color: rgb(243, 239, 239);
 }
 h3{
-    text-size-adjust: 20px;
+    margin: 0%;
 }
 head{
     margin-left: 35%;
@@ -92,11 +92,11 @@ head{
 /* css for testimonials */
 
 body {
-    padding-right: 0px;
-    padding-left: 0%;
+    
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('background.jpeg');  
+    background-image: url('background.jpeg'); 
+    place-items: center; 
   
   
   
@@ -107,18 +107,18 @@ body {
       display: inline-flex;
       background-color: transparent;
       border-radius: 55%; 
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       perspective: 1000px;
       margin-left: 0;
       margin-right: 0;
     }
     
     .flip-card-inner {
-      border-radius: 60%;
+      border-radius: 55%;
       position: relative;
-      width: 100%;
-      height: 100%;
+      width: 250px;
+      height: 250px;
       text-align: center;
       transition: transform 0.6s;
       transform-style: preserve-3d;
@@ -131,8 +131,8 @@ body {
     
     .flip-card-front, .flip-card-back {
       position: absolute;
-      width: 110%;
-      height: 115%;
+      width: 250px;
+      height: 250px;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       margin-left:  0;
@@ -144,12 +144,18 @@ body {
     .flip-card-front {
       
       color: black;
+      border-radius: 55%;
+      height: 50px;
+      width: 250px;
     }
     
     .flip-card-back {
-      border-radius: 60%; 
+      border-radius: 55%; 
+      height: 300px;
+      width: 300px;
       background-color: #434347;
       color: white;
+      padding: 30px;
     
       transform: rotateY(180deg);
     }
@@ -163,42 +169,54 @@ body {
   
        float: left; 
        width: 100%; 
-       padding: 0ch;
+      
        display: grid;
   
      }
 
     img{
-      border-radius: 60%;
+      border-radius: 55%;
       
     }
 
-  h1{
+h1{
     color: rgb(241, 234, 234);
     text-decoration: none;
   } 
 
   /* grid styling */
   .grid-container {
-    border: 20px;
+    row-gap: 60px;
+    column-gap: 60px;
+   
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 0px;
-    flex-wrap: wrap;
+    
     justify-content: space-evenly;
-    margin-left: 10%;
+  
   }
   .grid-item {
     
     border: 10px transparent rgba(0, 0, 0, 0.8);
-    padding: 50px;
+    padding: 20px;
     font-size: 15px;
-    text-align: center;
+    margin: 10px
+  
   }
+
+
   /* styling the form */
-  button{
-    background: rgb(255, 254, 254)
+  
+  button {
+    background: rgb(9, 184, 53);
+    box-sizing: border-box;
+    border-radius: 10%;
+    margin-bottom: 2%;
+    border-width: 20px;
+    place-items: center;
     
+  
+  }  
 
 }
 input[type=text], select, textarea {
@@ -232,12 +250,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-button{
-  background: rgb(9, 184, 53)
-  
-  
 
-}
 input[type=text], select, textarea {
 width: 100%;
 padding: 12px;
@@ -271,7 +284,7 @@ padding: 20px;
 padding-left: 0px;
 padding-right: 0px;
 width: 700px;
-margin-left: 20px;
+margin-left: 0px;
 margin-right: 0px;
 } 
 #contact-form{
@@ -279,5 +292,18 @@ margin-right: 0px;
   padding-left: 0px;
   
 }
+content{
+  place-items: center;
+}
 /* heading of about */
 
+/*Media Queries */
+
+@media only screen and (max-width: 480px) {
+iframe {
+ width: 40%;
+ height: auto;
+  }
+  
+
+}
